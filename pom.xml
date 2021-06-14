@@ -16,6 +16,9 @@
         <maven.surefire.version>2.22.2</maven.surefire.version>
         <aspectj.version>1.9.6</aspectj.version>
         <selenide.version>5.22.0</selenide.version>
+        <lombok.version>1.18.12</lombok.version>
+        <logger.version>1.2.3</logger.version>
+        <junit.jupiter.version>5.7.0</junit.jupiter.version>
     </properties>
 
     <build>
@@ -53,6 +56,31 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.jupiter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit.jupiter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logger.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
